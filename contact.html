@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" media="screen and (max-width: 992px)" href="mobile_style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PrpleRecord</title>
+		<link rel="shortcut icon" type="image/x-icon" href="prplekid.PNG" />
+		<style>
+		.error {color: #FF0000;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="loader"></div>
+
+	<header>
+		<h1 id="title">Me conctacter</h1>
+	</header>
+
+	<nav>
+	<div id="nvg">
+		<div class="links3"><a href=index.html title="Accueil" class="links2">Accueil</a></div>
+		<!-- <div class="links3"><a href=tarifs.html title="Tarifs" class="links2">Tarifs</a></div> -->
+		<div class="links3"><a href=sons.html title="Sons" class="links2">Sons</a></div>
+		<div class="links3"><a href=instrumentales.html title="Sons" class="links2">Instrumentales</a></div>
+		<div class="links3"><a href=artistes.html title="Artistes" class="links2">Artistes</a></div>
+		<div class="links3"><a href=star.html title="S.T.A.R" class="links2">S.T.A.R</a></div>
+		<div class="links3"><a href=materiel.html title="Matériel" class="links2">Materiel</a></div>
+		<div class="links3"><a href=faq.html title="Foire Aux Questions" class="links2">F.A.Q</a></div>
+		<div class="links3"><a href=contact.html title="Contact" class="links2" id="active">Contact</a></div>
+	</div>
+	</nav>
+
+
+<div class="login-box">
+  <h2>Nous Contacter</h2>
+  <form id="formulaire" action="contact.php" method="POST" name="myForm">
+    <div class="user-box">
+      <input type="text" name="name" id="name_contact" required>
+      <span class="validity"></span>
+      <label>Nom</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="email" required>
+      <span class="validity"></span>
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="subject" required>
+      <span class="validity"></span>
+      <label>Sujet</label>
+    </div>
+    <div class="user-box">
+    	<textarea name="message" rows="6" cols="25" minlength="6" required></textarea>
+    	<span class="validity"></span>
+    	<label>Votre message</label>
+	</div>
+
+	<div class="wrap">
+    <button class="button" onclick="valid()">Envoyer</button>
+  </div>
+</form>
+</div>
+
+   <!-- <a href="#" onclick='document.getElementById("formulaire").submit(); valid()'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div> -->
+ 
+ <!-- <script> 
+
+function valid() {
+	const name = document.getElementById('name_contact').value;
+  alert("Merci " + name + " nous avons bien recu votre demande");
+
+}
+</script> -->
+
+
+<div class="space"><p>............</p></div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/623aeb4a5a88d50db1a6e902/1fur2e6td';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+			$(".loader").fadeOut("1000");})
+		</script>
+
+	</body>
+
+</html>
